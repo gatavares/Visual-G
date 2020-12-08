@@ -3,20 +3,29 @@ Algoritmo "sistemaG4"
 // Disciplina: PSI
 // Aluno: Guilherme Tavares
 // Ano: 1º GPSI
-// Data: 24/11/2020
-//Exercicio:Construa  um  algoritmo  para  calcular  um  valor  introduzido  pelo  utilizador  e  que  seja  multiplicado  pela constante PI. Imprima resultado.PI = 3.14
-
+// Data: 25/11/2020
+//Exercicio:Construa um algoritmo para ler dois números. Em seguida, calcule a soma, a subtração, a multiplicação e a divisão  desses números, armazenando os resultados noutras variáveis. Imprimir os dados iniciais e  os resultados.
 Var
-Numero, resultado: real
+N1, N2, Soma, Sub, X, Dv: Real
 Inicio
-//calcular o numero do utilizador a multiplicar pelo PI=3.14
-Escreva ("Calculadora De PI    ")
 
-Escreva ("Insira um numero:")
-Leia (Numero)
+//calculadora de soma,subtração,multiplicação e divisão de 2 numeros.
+Escreva ("Isto é uma calculadora de soma,subtração,multiplicação e divisão de 2 numeros. ")
+Escreva ("Insira um Numero:")
+        Leia (N1)
 
-resultado <- Numero*pi
+Escreva ("Insira outro Numero:")
+        Leia (N2)
 
-Escreva ("O resultado do numero que inseriu vezes o PI(3.14) é:")
-Escreva (resultado)
+//calcular soma
+Soma <- N1+N2
+//calcular subtração
+Sub <- N1-N2
+//calcular multiplicação
+X <- N1*N2
+//calcular divisão
+Dv <- N1/N2
+
+//resultados
+Escreva ("A soma é igual a ", Soma, " , a subtração é igual a ", Sub, " , a multiplicação é igual a ", X, " e a divisã
 Fimalgoritmo
