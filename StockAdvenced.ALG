@@ -1,11 +1,11 @@
 Algoritmo "sistemaG1"
-// DescriÁ„o:(SistemaG1)
+// Descri√ß√£o:(SistemaG1)
 // Disciplina: PSI
 // Aluno: Guilherme Tavares
-// Ano: 1∫ GPSI
+// Ano: 1¬∫ GPSI
 // Data: 24/11/2020
-//ultima otimizaÁ„o: 27/11/2020
-//Exercicio:FaÁa um algoritmo para ìCalcular o stock mÈdio de produtosî, sendo que STOCKM…DIO = (QUANTIDADE MÕNIMA + QUANTIDADE M¡XIMA) /2
+//ultima otimiza√ß√£o: 27/11/2020
+//Exercicio:Fa√ßa um algoritmo para ‚ÄúCalcular o stock m√©dio de produtos‚Äù, sendo que STOCKM√âDIO = (QUANTIDADE M√çNIMA + QUANTIDADE M√ÅXIMA) /2
 
 Var
 StockMn, StockMx, Stock,StockMn2, StockMx2, Stock2, StockMn3, StockMx3, Stock3: inteiro
@@ -13,7 +13,7 @@ StockSm, StockSm2, StockSm3, StockMd,StockMd2, StockMd3: Real
 Pd1, Pd2, Pd3, Space, Space1: Caractere
 Ligarbloco, Ligarbloco2: real
 Inicio
-//calculadora VG para stock cada peÁa
+//calculadora VG para stock cada pe√ßa
 
 //BLOCO 1
 //Escrever o nome do produto 1
@@ -33,19 +33,19 @@ Escreva ("Insira o stock maximo de ", Pd1, Space1)
         Leia (StockMx)
 
 //vairavel ligar bloco 2
-Escreva ("Quer ligar o segundo produto digite 1 se n„o digite 0.")
+Escreva ("Quer ligar o segundo produto digite 1 se n√£o digite 0.")
 Leia (Ligarbloco)
-se Ligarbloco = 0 ent„o
+se Ligarbloco = 0 ent√£o
 Escreva ("Desligado.")
 fimse
 
-se Ligarbloco = 1 ent„o
+se Ligarbloco = 1 ent√£o
 Escreva ("Ligado.")
 fimse
 
 //BLOCO 2
 //Escrever o nome do produto 1
-se Ligarbloco = 1 ent„o
+se Ligarbloco = 1 ent√£o
 Escreva ("Insira o nome do segundo produto que quer:")
         Leia (Pd2)
 //Escrever o stock existente
@@ -60,18 +60,18 @@ Escreva ("Insira o stock maximo de ", Pd2, Space1)
 fimse
 
 //vairavel ligar bloco 3
-Escreva ("  Quer ligar o segundo produto digite 1 se n„o digite 0.")
+Escreva ("  Quer ligar o segundo produto digite 1 se n√£o digite 0.")
 Leia (Ligarbloco2)
-se Ligarbloco2 = 0 ent„o
+se Ligarbloco2 = 0 ent√£o
 Escreva ("Desligado.")
 fimse
 
-se Ligarbloco2 = 1 ent„o
+se Ligarbloco2 = 1 ent√£o
 Escreva ("Ligado.")
 fimse
 //BLOCO 3
 //Escrever o nome do produto 3
-se Ligarbloco2 = 1 ent„o
+se Ligarbloco2 = 1 ent√£o
 Escreva ("Insira o nome do terceiro produto que quer:")
         Leia (Pd3)
 //Escrever o stock existente
@@ -86,11 +86,11 @@ Escreva ("Insira o stock maximo de ", Pd2, Space1)
 fimse
 
 //Bloco 1.1
-//Fazer o Stock mÈdio
+//Fazer o Stock m√©dio
 StockSm <- StockMn+StockMx
 StockMd <- StockSm/2
 
-//Lista de invent·rio do produto 1
+//Lista de invent√°rio do produto 1
 Escreva (" Produto:", Pd1)
         Escreva (Space)
 Escreva ("Stock minimo", Space1, StockMn)
@@ -99,13 +99,13 @@ Escreva ("Stock maximo", Space1, StockMx)
         Escreva (Space)
 Escreva ("Stock Disponivel", Space1, Stock)
         Escreva (Space)
-Escreva ("Stock mÈdio", Space1, StockMd)
+Escreva ("Stock m√©dio", Space1, StockMd)
         Escreva (Space)
 
 
-se Ligarbloco = 1 ent„o
+se Ligarbloco = 1 ent√£o
 //Bloco 2.1
-//Fazer o Stock mÈdio
+//Fazer o Stock m√©dio
 StockSm2 <- StockMn2+StockMx2
 StockMd2 <- StockSm2/2
 
@@ -118,14 +118,14 @@ Escreva ("Stock maximo", Space1, StockMx2)
         Escreva (Space)
 Escreva ("Stock Disponivel", Space1, Stock2)
         Escreva (Space)
-Escreva ("Stock mÈdio", Space1, StockMd2)
+Escreva ("Stock m√©dio", Space1, StockMd2)
         Escreva (Space)
 fimse
 
 
-se Ligarbloco2 = 1 ent„o
+se Ligarbloco2 = 1 ent√£o
 //Bloco 3.1
-//Fazer o Stock mÈdio
+//Fazer o Stock m√©dio
 StockSm3 <- StockMn3+StockMx3
 StockMd3 <- StockSm3/2
 
@@ -138,39 +138,39 @@ Escreva ("Stock maximo", Space1, StockMx3)
         Escreva (Space)
 Escreva ("Stock Disponivel", Space1, Stock3)
         Escreva (Space)
-Escreva ("Stock mÈdio", Space1, StockMd3)
+Escreva ("Stock m√©dio", Space1, StockMd3)
         Escreva (Space)
 fimse
 
 //Verdadeiro e Falso
-se Stock > StockMd ent„o
-Escreva ("O/A ", Pd1, " tem mais stock disponivel que a sua mÈdia.", Space)
+se Stock > StockMd ent√£o
+Escreva ("O/A ", Pd1, " tem mais stock disponivel que a sua m√©dia.", Space)
 fimse
 
-se Stock < StockMd ent„o
-Escreva ("O ", Pd1, " tem menos stock disponivel que a sua mÈdia.", Space)
-fimse
-
-
-
-se Ligarbloco = 1 ent„o
-se Stock2 > StockMd2 ent„o
-Escreva ("O/A ", Pd2, " tem mais stock disponivel que a sua mÈdia.", Space)
-fimse
-
-se Stock2 < StockMd2 ent„o
-Escreva ("O/A ", Pd2, " tem menos stock disponivel que a sua mÈdia.", Space)
-fimse
+se Stock < StockMd ent√£o
+Escreva ("O ", Pd1, " tem menos stock disponivel que a sua m√©dia.", Space)
 fimse
 
 
-se Ligarbloco2 = 1 ent„o
-se Stock3 > StockMd3 ent„o
-Escreva ("O/A ", Pd3, " tem mais stock disponivel que a sua mÈdia.", Space)
+
+se Ligarbloco = 1 ent√£o
+se Stock2 > StockMd2 ent√£o
+Escreva ("O/A ", Pd2, " tem mais stock disponivel que a sua m√©dia.", Space)
 fimse
 
-se Stock3 < StockMd3 ent„o
-Escreva ("O/A ", Pd3, " tem menos stock disponivel que a sua mÈdia.", Space)
+se Stock2 < StockMd2 ent√£o
+Escreva ("O/A ", Pd2, " tem menos stock disponivel que a sua m√©dia.", Space)
+fimse
+fimse
+
+
+se Ligarbloco2 = 1 ent√£o
+se Stock3 > StockMd3 ent√£o
+Escreva ("O/A ", Pd3, " tem mais stock disponivel que a sua m√©dia.", Space)
+fimse
+
+se Stock3 < StockMd3 ent√£o
+Escreva ("O/A ", Pd3, " tem menos stock disponivel que a sua m√©dia.", Space)
 fimse
 fimse
 
